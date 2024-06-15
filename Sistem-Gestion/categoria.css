@@ -1,0 +1,191 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 15%; /* Ajusta este valor para cambiar el ancho de la ventana emergente */
+  }
+  
+  .close {
+    color: #aa0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-content {
+    position: relative;
+    text-align: center; /* Centra el texto de la marca */
+  }
+  
+  .close {
+    position: absolute; /* Posiciona el icono de la "x" de manera absoluta respecto al contenedor .modal-content */
+    right: 10px; /* Ajusta este valor para mover el icono de la "x" horizontalmente */
+    top: 50%; /* Centra el icono de la "x" verticalmente */
+    transform: translateY(-50%); /* Este es un truco para centrar perfectamente el icono de la "x" en cualquier tamaño de contenedor */
+  }
+  .modal-content h2 {
+    font-size: 2em; /* Ajusta este valor para cambiar el tamaño del nombre de la marca */
+  }
+  
+  .modal-content p {
+    color: black; /* Cambia el color de la palabra "Categoría" a negro */
+    text-align: left; /* Alinea la palabra "Categoría" a la izquierda */
+    font-size: 20px;
+  }
+  .modal-content p {
+    color: black;
+    text-align: left;
+  }
+  
+  .modal-content ul {
+    color: black; /* Cambia el color de las opciones a negro */
+    text-align: left; /* Alinea las opciones a la izquierda */
+    font-size: 0.8em; /* Ajusta este valor para cambiar el tamaño de las opciones */
+  }
+  .modal-content ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    color: black;
+    text-align: left;
+    font-size: 2.5em; /* Ajusta este valor para cambiar el tamaño de las opciones */
+  }
+  
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px; /* Mueve el icono de la "x" a la parte superior */
+    transform: none; /* Elimina el centrado vertical del icono de la "x" */
+  }
+  .modal-content h2 {
+    font-size: 3em; /* Ajusta este valor para cambiar el tamaño del nombre de la marca */
+  }
+  
+  .modal-content {
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Añade un sombreado al borde de la ventana */
+  }
+  .modal-content a {
+    color: black; /* Cambia el color de los enlaces a negro */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }
+  .modal-content {
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Añade un sombreado negro al borde de la ventana */
+  }
+
+
+  .modal-content {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    color: #333; /* Cambia el color del texto a un gris oscuro */
+    background-color: #f9f9f9; /* Cambia el color de fondo a un gris claro */
+    border-radius: 5px; /* Añade bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Añade un sombreado suave */
+  }
+  
+  .modal-content h2 {
+    font-size: 2.5em; /* Aumenta el tamaño del nombre de la marca */
+    color: #555; /* Cambia el color del nombre de la marca a un gris más oscuro */
+  }
+  
+  .modal-content p, .modal-content ul {
+    color: #777; /* Cambia el color de "Categoría" y las opciones a un gris medio */
+  }
+  
+  .modal-content a {
+    color: #37307c; /* Cambia el color de los enlaces a un azul oscuro */
+  }
+  
+  .close {
+    color: #c00; /* Cambia el color del icono de la "x" a un rojo oscuro */
+  }
+
+  .modal-content p {
+    font-size: 2.5em; /* Ajusta este valor para cambiar el tamaño de "Categoría" */
+  }
+
+
+
+
+  .modal-content h2 {
+    margin-bottom: 30px; /* Crea una separación debajo del nombre de la marca. Ajusta este valor para cambiar la separación. */
+  }
+  
+  .modal-content p {
+    margin-bottom: 10px; /* Crea una separación debajo de "Categoría". Ajusta este valor para cambiar la separación. */
+  }
+  
+  .modal-content ul li {
+    margin-bottom: 5px; /* Crea una separación entre las opciones. Ajusta este valor para cambiar la separación. */
+  }
+
+
+
+  .modal-content p {
+    margin-bottom: 20px; /* Crea una separación debajo de "Categoría". Ajusta este valor para cambiar la separación. */
+  }
+  
+  .modal-content ul {
+    margin-top: 20px; /* Crea una separación encima de las opciones. Ajusta este valor para cambiar la separación. */
+  }
+
+
+
+
+
+
+
+
+  #submenu {
+    position: absolute;
+    top: 60px; /* ajusta esta propiedad según sea necesario para alinear el submenú al icono */
+    left: 1050px; /* ajusta esta propiedad según sea necesario para alinear el submenú al icono */
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .menu:hover #submenu {
+    display: block;
+    
+  }
+  .section-title{
+  margin-top: -10px;
+}
+.producto {
+   width: 300px;
+   display: inline-block;
+   text-align: center;
+   margin: 10px;
+   border: 1px solid black;
+   padding: 10px;
+  }
+
+  .producto img {
+   width: 200px;
+   height: 200px;
+  }
+
+  .producto p {
+   margin: 0;
+  }

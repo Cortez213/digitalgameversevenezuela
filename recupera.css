@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bled-2582655_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    color: #ffffff;
+}
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #4a4aee;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #6464f8;
+}
+
+#form {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+#loco {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(51, 51, 51, 0.602);
+    text-align: center;
+}
+
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: #4a4aee;
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 2rem 0;
+    
+        color: white;
+    
+
+
+    }
+
+#form input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(255, 255, 255) thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+#loco input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(255, 255, 255) thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+
+
+#form input[type="submit"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+
+#loco input[type="submit"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pie-pagina{
+    position: absolute;
+    bottom: 0;
+    color: transparent;
+  }
+        .pie-pagina .grupo-2{
+            background-color: transparent;
+            padding: 15px 10px;
+            text-align: center;
+            color: #ffffff;
+  
+        }
+        .pie-pagina .grupo-2 small{
+            font-size: 15px;
+        }
+        @media screen and (max-width:800px){
+            .pie-pagina .grupo-1{
+                width: 90%;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap:30px;
+                padding: 35px 0px;
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        /* Globals  */
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+            scroll-padding: 2rem;
+        }
+        ::selection{
+            color: var(--text-color);
+            background-color: var(--main-color);
+        }
+        .container{
+            max-width: 1068px;
+            margin: auto;
+            width: 100%;
+        }
+        section{
+            padding: 4rem 0 3rem;
+        }
+        img{
+            width: 100%;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            z-index: 100;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .logo{
+            font-size: 1.1rem;
+            
+            font-weight: 600;
+            color: var(--sec-color);
+            text-transform: uppercase;
+            color: aliceblue;
+        }
+        .logo span{
+            color: var(--main-color);
+            font-weight: 700;
+        }
+.nav a {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+.nav a:hover{
+    color: #4a4aee;
+}
+
+.right-links{
+    display: flex;
+    gap: 10px;
+}
+.link{
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.large{
+    font-size: 18px;
+    
+}
+.olvidaste a {
+    color: #ffffff;
+
+}

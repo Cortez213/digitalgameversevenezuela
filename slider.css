@@ -1,0 +1,37 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 0; /* Elimina el espacio en el borde del slider */
+}
+
+.slider-btn {
+    font-size: 3rem; /* Icono más grande */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.slide-container {
+    width: 60%; /* Slider más pequeño */
+    overflow: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 1rem; /* Espacio entre las imágenes */
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 33.33%; /* Muestra 3 imágenes a la vez */
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que las imágenes se ajusten al tamaño del contenedor */
+}

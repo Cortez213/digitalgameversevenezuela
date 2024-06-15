@@ -1,0 +1,22 @@
+#category-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: transparent; /* Cambia esto al color de fondo que prefieras */
+}
+
+.category-link {
+    color: white;
+    font-size: 20px; /* Ajusta este valor para cambiar el tamaño del texto */
+    border-radius: 50%; /* Hace que el enlace sea un círculo */
+    padding: 10px; /* Añade un poco de espacio alrededor del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.category-link.active {
+    background-color: white;
+    color: black;
+}
+#polvo-link {
+    visibility: visible;
+}
